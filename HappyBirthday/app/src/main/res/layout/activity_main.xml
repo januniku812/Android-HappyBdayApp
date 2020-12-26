@@ -1,0 +1,207 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+<android.widget.RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/parent"
+    tools:context=".MainActivity">
+    <!--    Images-->
+    <!--    first(top)-->
+    <ImageView
+        android:id="@+id/firstimage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="600dp"
+        android:src="@drawable/topbobateaimage" />
+    <!-- second image -->
+    <ImageView
+
+        android:id="@+id/secondtotopimage"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_marginTop="130dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bubbleteasixnobackground" />
+    <!-- bottommost image -->
+    <!--boba stickers-->
+    <!--    top right of menu1 -->
+    <ImageView
+        android:id="@+id/bottomImage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="600dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bubbleteatwo" />
+    <!--   top right of menu -->
+    <ImageView
+        android:id="@+id/blueIcedBoba"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/menu1"
+        android:layout_marginLeft="335dp"
+        android:layout_marginTop="270dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/blueboba" />
+
+    <ImageView
+        android:id="@+id/splitBobaTea"
+        android:layout_width="149dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@id/secondtotopimage"
+        android:layout_marginLeft="-42dp"
+        android:layout_marginTop="250dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/splitbobatea" />
+
+    <!--menus-->
+    <ImageView
+        android:id="@+id/menu1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="250dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bubbleteamenuone" />
+
+    <ImageView
+        android:id="@+id/menu2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="400dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bubbleteamenutwoblackbkg" />
+
+    <ImageView
+        android:id="@+id/fifthimage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@id/bottomImage"
+        android:layout_alignLeft="@id/bottomImage"
+        android:src="@drawable/bubbleteastickertwo" />
+
+    <ImageView
+        android:id="@+id/sixthimage"
+        android:layout_width="69dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="480dp"
+        android:layout_marginLeft="270dp"
+        android:src="@drawable/arrowsticker" />
+
+    <ImageView
+        android:id="@+id/bobaLifeline"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignLeft="@id/firstimage"
+        android:layout_marginLeft="320dp"
+        android:src="@drawable/bobamilktealifelinestickernobkg" />
+
+    <TextView
+        android:id="@+id/firsttextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+
+        android:text="TasteBubbles"
+        android:textSize="35sp"
+        android:textColor="@color/white"
+        android:layout_alignRight="@id/secondtextview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.373" />
+
+
+    <TextView
+        android:id="@+id/secondtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Local Boba Tea Busines"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/firsttextview" />
+
+    <TextView
+        android:id="@+id/thirdtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/menu1"
+        android:layout_marginLeft="76dp"
+        android:text="Instagram: @tastebubbles_texas"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/fourthtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="menu"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginRight="130dp"
+        android:layout_marginBottom="310dp"
+        android:layout_marginTop="570dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/fifthTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/firstimage"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/secondtextview"
+        android:text="Serving hand-made boba since 2013"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/buisinessInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instagram: @taste_bubblestexas"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:layout_alignTop="@id/fourthtextview"/>
+
+    <TextView
+        android:id="@+id/buisinessInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location: Allen, Tx "
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:layout_below="@id/buisinessInfo"/>
+
+    <TextView
+        android:id="@+id/buisinessInfo3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our email: tastebubbles.texas917@gmail.com "
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:layout_below="@id/buisinessInfo2"/>
+
+    <TextView
+        android:id="@+id/buisinessInfo4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hours Of Operation: 8am to 6pm, Monday-Saturday"
+        android:textColor="@color/black"
+        android:layout_marginLeft="10dp"
+        android:textSize="14sp"
+        android:layout_below="@id/buisinessInfo3"/>
+
+</android.widget.RelativeLayout>
+</ScrollView>
